@@ -1,0 +1,26 @@
+{
+  "name": "futility",
+  "version": "1.0.0",
+  "description": "A utility library used to teach functional programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RecursiveHouse/functional-utility.git"
+  },
+  "keywords": [
+    "fp",
+    "functional",
+    "programming",
+    "purity",
+    "immutability"
+  ],
+  "author": "Recursive House",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RecursiveHouse/functional-utility/issues"
+  },
+  "homepage": "https://github.com/RecursiveHouse/functional-utility#readme"
+}
