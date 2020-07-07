@@ -20,3 +20,11 @@ const updateObject = (obj, key, value) => ({ ...obj, [key]: value });
 
 const modifyObject = (obj, key, fn) => ({ ...obj, [key]: fn(obj[key]) });
 
+module.export = {
+  makeArray,
+  updateArray,
+  modifyArray,
+  makeObject,
+  updateObject,
+  modifyObject,
+};

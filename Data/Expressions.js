@@ -27,3 +27,10 @@ const cond = ([x, ...xs]) =>
       ),
     () => {}
   );
+
+module.export = {
+  letIn,
+  ifThenElse,
+  recur,
+  cond,
+};
