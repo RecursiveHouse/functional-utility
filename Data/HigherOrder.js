@@ -7,7 +7,7 @@ const apply = (f) => (x) => f(x);
 const mapEasy = (f) => (xs) => {
   if(xs.length === 0) return []
   const [y, ...ys] = xs
-  return [f(y), ...map(f)(ys)]
+  return [f(y), ...mapEasy(f)(ys)]
 }
 
 const map = (f) => (xs) =>
