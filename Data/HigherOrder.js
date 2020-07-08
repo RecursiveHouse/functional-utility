@@ -51,7 +51,7 @@ const reduce = (f) => (acc) => (xs) =>
 
 // helper functions
 const head = ([x, _]) => x;
-const tail = ([_, xs]) => xs;
+const tail = ([_, ...xs]) => xs;
 const compose = (f) => (g) => (x) => f(g(x));
 const constt = (a) => () => a
 const otherwise = true
