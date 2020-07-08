@@ -3,6 +3,13 @@ const curry = (f) => (x) => (y) => f(x, y);
 const uncurry = (f, x, y) => f(x)(y);
 
 const apply = (f) => (x) => f(x);
+
+const mapEasy = (f) => (xs) => {
+  if(xs.length === 0) return []
+  const [y, ...ys] = xs
+  return [f(y), ...map(f)(ys)]
+}
+
 const map = (f) => (xs) =>
   xs.length === 0 ? [] : [f(head(xs)), ...map(f)(tail(xs))];
 
